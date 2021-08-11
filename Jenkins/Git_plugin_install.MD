@@ -11,7 +11,7 @@ Git is one of the most popular tools for version control system. you can pull co
    yum install git -y
    ```
 
-#### Setup Git on jenkins console
+#### Setup Git on jenkins console (MAY ALREADY BE INSTALLED)
 - Install git plugin without restart  
   - `Manage Jenkins` > `Manage Plugins` > `available` > `then search for "github"`
 
