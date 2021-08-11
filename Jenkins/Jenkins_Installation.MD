@@ -68,8 +68,8 @@ Jenkins is a self-contained Java-based program, ready to run out-of-the-box, wit
    - `Admin` > `Configure` > `Password`
    
 - Configure `java` path
-  - `Manage Jenkins` > `Global Tool Configuration` > `JDK` . `Add the NAME = JAVA_HOME  and the link
-  `# echo $JAVA_HOME    to get JAVA_HOME path
+  - `Manage Jenkins` > `Global Tool Configuration` > `JDK` . `Add the NAME = JAVA_HOME
+  `# echo $JAVA_HOME    to get JAVA_HOME path and add the path after unchecked Install Automatically
  
 
 ### Test Jenkins Jobs
