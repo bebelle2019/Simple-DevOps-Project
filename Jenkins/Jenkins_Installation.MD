@@ -48,7 +48,8 @@ Jenkins is a self-contained Java-based program, ready to run out-of-the-box, wit
 
    ### Start Jenkins and Setup Jenkins to start at boot
    ``` sh
-   # systemctl enable --now jenkins
+   # sudo service jenkins start  &&  sudo chkconfig jenkins on
+   ```
 
 
    ### Accessing Jenkins
