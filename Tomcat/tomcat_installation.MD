@@ -10,10 +10,10 @@ yum install -y java-1.8*
    Change hpstname to tomcat
    # Create tomcat directory
    cd /opt
-   wget https://mirrors.sonic.net/apache/tomcat/tomcat-9/v9.0.41/bin/apache-tomcat-9.0.41.tar.gz
-   tar -xvzf /opt/apache-tomcat-9.0.41.tar.gz
+   wget https://mirror.olnevhost.net/pub/apache/tomcat/tomcat-9/v9.0.52/bin/apache-tomcat-9.0.52.tar.gz
+   tar -xvzf /opt/apache-tomcat-9.0.52.tar.gz
    ```
-   mv apache-tomcat-9.0.41 tomcat
+   mv apache-tomcat-9.0.52 tomcat
    
    cd tomcat/bin
  
@@ -40,7 +40,7 @@ Access tomcat application from browser on port 8090
 1. Tomcat application doesnt allow to login from browser. changing a default parameter in context.xml does address this issue  (Try to click on "manage app" from the browser)
    ```sh
    #search for context.xml
-   find / -name context.xml      Then edit the following files
+   find / -name context.xml | tail -2      Then edit the following files
    /opt/tomcat/webapps/host-manager/META-INF/context.xml
    /opt/tomcat/webapps/manager/META-INF/context.xml
    ```
