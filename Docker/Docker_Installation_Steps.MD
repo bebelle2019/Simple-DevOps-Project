@@ -7,7 +7,7 @@
 ## Installation Steps
 
 1. Add this script to data user
-#!/bin/bash
+"#!/bin/bash
 sudo -i
 
 #Change hostname to docker-host
@@ -27,7 +27,7 @@ useradd dockeradmin
 echo 1qaz2wsx | passwd dockeradmin --stdin
 
 #Add a dockeradmin to docker group to manage docker
-usermod -aG docker dockeradmin
+usermod -aG docker dockeradmin"
 
 
 ### Validation test
