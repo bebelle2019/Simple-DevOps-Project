@@ -7,6 +7,7 @@
 ## Installation Steps
 
 1. Add this script to data user
+```sh
 sudo -i
 Change hostname to docker-host
 hostnamectl set-hostname docker-host
@@ -21,7 +22,7 @@ Add password to user
 echo 1qaz2wsx | passwd dockeradmin --stdin
 Add a dockeradmin to docker group to manage docker
 usermod -aG docker dockeradmin
-
+```
 
 ### Validation test
 1. Create a tomcat docker container by pulling a docker image from the public docker registry
