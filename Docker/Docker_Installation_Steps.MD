@@ -9,7 +9,7 @@
 1. Add this script to data user
 ```sh
 sudo -i
-Change hostname to docker-host
+#Change hostname to docker-host
 hostnamectl set-hostname docker-host
 Patch
 yum install docker -y
