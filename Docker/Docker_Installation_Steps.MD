@@ -7,7 +7,6 @@
 ## Installation Steps
 
 1. Add this script to data user
-   ```sh
 #!/bin/bash
 sudo -i
 
@@ -29,7 +28,6 @@ echo 1qaz2wsx | passwd dockeradmin --stdin
 
 #Add a dockeradmin to docker group to manage docker
 usermod -aG docker dockeradmin
-   ```
 
 
 ### Validation test
