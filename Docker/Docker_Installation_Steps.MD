@@ -8,19 +8,20 @@
 
 1. Add this script to data user
 ```sh
+#!/bin/bash
 sudo -i
 #Change hostname to docker-host
 hostnamectl set-hostname docker-host
-Patch
+#Patch
 yum install docker -y
 start docker services
 service docker start
 service docker status
-Create dockeradmin user
+#Create dockeradmin user
 useradd dockeradmin
-Add password to user
+#Add password to user
 echo 1qaz2wsx | passwd dockeradmin --stdin
-Add a dockeradmin to docker group to manage docker
+#Add a dockeradmin to docker group to manage docker
 usermod -aG docker dockeradmin
 ```
 
