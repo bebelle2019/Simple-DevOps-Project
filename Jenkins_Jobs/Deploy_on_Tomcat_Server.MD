@@ -40,6 +40,7 @@
                Description: `user to deploy on tomcat vm`
          - Tomcat URL : `http://<PUBLIC_IP>:8080`
 
+Whenever we execute the job, it will copy the war file to tomcat server while authentication will use deployer user. The default location will be /opt/tomcat/webapps.
 ### Apply and Save, run the job now.
 verify 
 cd /opt/tomcat/webapps    to see webapp.war  just got created
