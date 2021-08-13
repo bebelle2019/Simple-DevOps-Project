@@ -37,3 +37,6 @@ ADD THE FOLLOWING
 BUILD and go to docker-host to verify dockeradmin home
 
 Save and run the job now.
+
+If you don't need target directory, go back and add 
+`webapp/target` to Remove Prefix
