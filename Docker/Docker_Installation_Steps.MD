@@ -31,15 +31,7 @@ usermod -aG docker dockeradmin
    docker run -d --name test-tomcat-server -p 8080:8080 tomcat:9
    d = dettach
    ```
-It may not work because the webapps is on a different location
-- Login to container
-  ```sh
-  docker exec -it ContainerName /bin/bash
-  cp -R webapps.dist/* webapps/
-  ```
-  
-
-Login to 
+# It may not work because the webapps is on a different location
 ### Fix HTTP Status 404: NOT FOUND
   ``` sh
     LOGIN TO THE CONTAINER
