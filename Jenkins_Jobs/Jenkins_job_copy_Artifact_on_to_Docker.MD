@@ -14,16 +14,15 @@ Go to Manage Jenkins --- configure system, go down to publish over ssh and click
  
 ### Steps to create "Deploy_on_Docker_Host" Jenkin job
  #### From Jenkins home page select "New Item"
-   - Enter an item name: `Deploy_on_Docker_Host`
-     - Copy from: `Deploy_on_Tomcat_Server`
+   - Enter an item name: `Deploy-on-Docker-Host`
+     - Copy from: `Deploy-on-Tomcat-Server`
      
    - *Source Code Management:*
       - Repository: `https://github.com/itresolve/hello-world.git`
       - Branches to build : `*/master`  
-   - *Poll SCM* :      - `* * * *`
 
 *Disable POLL SCM*
-*Delete deploy to container*
+*Delete deploy to VM*
 ADD THE FOLLOWING
 
  - *Post-build Actions*
