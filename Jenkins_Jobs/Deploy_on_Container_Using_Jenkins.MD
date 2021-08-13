@@ -8,29 +8,13 @@
 3. `Dockerfile` under *`/home/dockeradmin`* in user home directory on docker host 
    ```sh 
    # Pull tomcat latest image from dockerhub 
-   From tomcat
+   From tomcat:9
    # Maintainer
    MAINTAINER "ItResolveIt" 
 
    # copy war file on to container 
    COPY ./webapp.war /usr/local/tomcat/webapps
    
-### Integration between Docker-host and Jenkins
-
-Install "publish Over SSH"
- - `Manage Jenkins` > `Manage Plugins` > `Available` > `Publish over SSH`
-
-Enable connection between Docker-host and Jenkins
-
-- `Manage Jenkins` > `Configure System` > `Publish Over SSH` > `SSH Servers` 
-
-	- SSH Servers:
-                - Name: `docker-host`
-		- Hostname:`<ServerIP>`
-		- username: `dockeradmin`
-               
-       -  `Advanced` > chose `Use password authentication, or use a different key`
-		 - password: `*******`
  
 ### Steps to create "Deploy_on_Container" Jenkin job
 #### From Jenkins home page select "New Item"
