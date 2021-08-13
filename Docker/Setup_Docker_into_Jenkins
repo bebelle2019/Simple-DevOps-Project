@@ -19,3 +19,10 @@ Enable connection between Docker-host and Jenkins
                
        -  `Advanced` > chose `Use password authentication, or use a different key`
 		 - password: `*******`
+
+### FIX FAILED PASSWORD AUTHENTICATOR
+  ```sh
+  vim /etc/ssh/sshd_config
+  PasswordAuthentication LINE MUST BE set to yes
+  systemctl reload sshd
+   ```
