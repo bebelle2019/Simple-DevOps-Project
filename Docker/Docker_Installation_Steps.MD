@@ -14,9 +14,7 @@ sudo -i
 hostnamectl set-hostname docker-host
 #Patch
 yum install docker -y
-start docker services
-service docker start
-service docker status
+systemctl enable --now docker
 #Create dockeradmin user
 useradd dockeradmin
 #Add password to user
@@ -28,12 +26,20 @@ usermod -aG docker dockeradmin
 ### Validation test
 1. Create a tomcat docker container by pulling a docker image from the public docker registry
    ```sh
-   docker pull tomcat:latest
-   docker run --name test-tomcat-server -p 8090:8080 tomcat:latest
-   docker run -d --name test-tomcat-server -p 8090:8080 tomcat:latest
+   docker pull tomcat:9
+   docker run --name test-tomcat-server -p 8080:8080 tomcat:9
+   docker run -d --name test-tomcat-server -p 8080:8080 tomcat:9
    d = dettach
    ```
-   
+It may not work because the webapps is on a different location
+- Login to container
+  ```sh
+  docker exec -it ContainerName /bin/bash
+  cp -R webapps.dist/* webapps/
+  ```
+  
+
+Login to 
 ### Fix HTTP Status 404: NOT FOUND
   ``` sh
     LOGIN TO THE CONTAINER
